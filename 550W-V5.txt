@@ -48,6 +48,13 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5,
 })
 wait(2)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "🇹「㊐   ㊊』🇿",
+    Text = "云端加速启动中",
+    Duration = 5, 
+})
+
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -104,7 +111,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/m
     local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/qqT4Ek4t')))()
 -----------------------------------------------------------------------------------------------------
 local CardSystemScreenGui = Instance.new("ScreenGui")
-local Window = OrionLib:MakeWindow({Name = "550W V5", HidePremium = false, SaveConfig = true,IntroText = "550W V5", ConfigFolder = "550W V5"})
+local Window = OrionLib:MakeWindow({Name = "550", HidePremium = false, SaveConfig = true,IntroText = "550W V5", ConfigFolder = "550W V5"})
 -----------------------------------------------------------------------------------------------------
 local about = Window:MakeTab({
     Name = "550W V5",
