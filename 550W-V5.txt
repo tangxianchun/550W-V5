@@ -21,6 +21,9 @@ _G.whitelist=true
 elseif a=="114514phz129"then
 _G.whitelist=true
 
+elseif a=="qjddie4514"then
+_G.whitelist=true
+
 elseif a=="567yydc"then
 _G.whitelist=true
 
@@ -128,7 +131,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/m
     local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/qqT4Ek4t')))()
 -----------------------------------------------------------------------------------------------------
 local CardSystemScreenGui = Instance.new("ScreenGui")
-local Window = OrionLib:MakeWindow({Name = "", HidePremium = false, SaveConfig = true,IntroText = "550W V5", ConfigFolder = "550W V5"})
+local Window = OrionLib:MakeWindow({Name = "550", HidePremium = false, SaveConfig = true,IntroText = "550W V5", ConfigFolder = "550W V5"})
 -----------------------------------------------------------------------------------------------------
 local about = Window:MakeTab({
     Name = "550W V5",
