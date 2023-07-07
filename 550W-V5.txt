@@ -32,6 +32,9 @@ _G.whitelist=true
 elseif a=="Zsjcb1005"then
 _G.whitelist=true
 
+elseif a=="function963"then
+_G.whitelist=true
+
 elseif a=="Bluewitchme"then
 _G.whitelist=true
 
