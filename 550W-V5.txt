@@ -26,6 +26,9 @@ _G.whitelist=true
 elseif a=="jinitaimei1y55555"then
 _G.whitelist=true
 
+elseif a=="6fhg51"then
+_G.whitelist=true
+
 elseif a=="moyingyo"then
 _G.whitelist=true
 
