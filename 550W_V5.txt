@@ -81,6 +81,12 @@ Tab:AddButton({
 	end
 })
 Tab:AddButton({
+	Name = "白灰 x Script",
+	Callback = function()
+	getgenv().XiaoYun = "白灰脚本作者小云"loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E7%99%BD%E7%81%B0%E8%84%9A%E6%9C%ACgui.lua"))()
+	end
+})
+Tab:AddButton({
 	Name = "最强透视",
 	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))()
