@@ -6024,7 +6024,7 @@ Tab:AddToggle(
             end
         end
     
-})
+)
 
 Tab:AddToggle(
     
@@ -6037,7 +6037,7 @@ Tab:AddToggle(
             end
         end
     
-})
+)
     
 Tab:AddToggle(
     
@@ -6050,7 +6050,7 @@ Tab:AddToggle(
             end
         end
     
-})
+)
 
 local Tab = Window:MakeTab({
     Name = "自动购买功能",
@@ -6069,7 +6069,7 @@ Tab:AddToggle(
             end
         end
     
-})
+)
 
 Tab:AddToggle(
     
@@ -6082,7 +6082,7 @@ Tab:AddToggle(
             end
         end
     
-})
+)
 
 Tab:AddToggle(
     
@@ -6095,7 +6095,7 @@ Tab:AddToggle(
             end
         end
     
-})
+)
 
 Tab:AddToggle(
     
@@ -6108,7 +6108,7 @@ Tab:AddToggle(
             end
         end
     
-})
+)
 
 Tab:AddToggle(
     
@@ -6121,7 +6121,7 @@ Tab:AddToggle(
             end
         end
     
-})
+)
 
 Tab:AddButton(
         Name = "解锁所有岛",
@@ -6133,4 +6133,5 @@ Tab:AddButton(
                 end
             end
         end
-})
+)
+end
