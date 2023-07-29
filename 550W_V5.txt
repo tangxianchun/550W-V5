@@ -6014,7 +6014,7 @@ function buyshurikens()
 end
 
 Tab:AddToggle(
-    {
+    
         Name = "自动挥舞",
         Default = false,
         Callback = function(x)
@@ -6023,11 +6023,11 @@ Tab:AddToggle(
                 swinging()
             end
         end
-    }
-)
+    
+})
 
 Tab:AddToggle(
-    {
+    
         Name = "自动售卖",
         Default = false,
         Callback = function(x)
@@ -6036,11 +6036,11 @@ Tab:AddToggle(
                 selling()
             end
         end
-    }
-)
+    
+})
     
 Tab:AddToggle(
-    {
+    
         Name = "存满了自动售卖",
         Default = false,
         Callback = function(x)
@@ -6049,8 +6049,8 @@ Tab:AddToggle(
                 maxsell()
             end
         end
-    }
-)
+    
+})
 
 local Tab = Window:MakeTab({
     Name = "自动购买功能",
@@ -6059,7 +6059,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddToggle(
-    {
+    
         Name = "自动购买剑",
         Default = false,
         Callback = function(x)
@@ -6068,11 +6068,11 @@ Tab:AddToggle(
                 buyswords()
             end
         end
-    }
-)
+    
+})
 
 Tab:AddToggle(
-    {
+    
         Name = "自动购买腰带",
         Default = false,
         Callback = function(x)
@@ -6081,11 +6081,11 @@ Tab:AddToggle(
                 buybelts()
             end
         end
-    }
-)
+    
+})
 
 Tab:AddToggle(
-    {
+    
         Name = "自动购买称号（等级）",
         Default = false,
         Callback = function(x)
@@ -6094,11 +6094,11 @@ Tab:AddToggle(
                 buyranks()
             end
         end
-    }
-)
+    
+})
 
 Tab:AddToggle(
-    {
+    
         Name = "自动购买忍术",
         Default = false,
         Callback = function(x)
@@ -6107,11 +6107,11 @@ Tab:AddToggle(
                 buyskill()
             end
         end
-    }
-)
+    
+})
 
 Tab:AddToggle(
-    {
+    
         Name = "自动购买（全部打开就行）",
         Default = false,
         Callback = function(x)
@@ -6120,11 +6120,10 @@ Tab:AddToggle(
                 buyshurikens()
             end
         end
-    }
-)
+    
+})
 
 Tab:AddButton(
-    {
         Name = "解锁所有岛",
         Callback = function()
             for _, v in next, game.workspace.islandUnlockParts:GetChildren() do
@@ -6134,6 +6133,4 @@ Tab:AddButton(
                 end
             end
         end
-    }
-)
-end
+})
