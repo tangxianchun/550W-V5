@@ -3925,7 +3925,7 @@ local TargetWalkspeed
 CharTab:AddSlider({
 	Name = "速度",
 	Min = 0,
-	Max = 9999999,
+	Max = 50,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
@@ -4216,18 +4216,7 @@ local NotificationCoroutine = coroutine.create(function()
         end
     end)
 end)
-local Tab = Window:MakeTab({
-    Name = "玩家",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
 
-Tab:AddButton({
-	Name = "门",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wshibsiyedehl/Doorsxiaochen/main/DoorschenNew114514%20or%203.1415926%20%E6%97%A0%E6%B3%95%E7%90%86%E8%A7%A3%E6%97%A0%E6%B3%95%E7%90%86%E8%A7%A3%E6%97%A0%E6%B3%95%E7%90%86%E8%A7%A3"))()
-    end
-})
 local Tab = Window:MakeTab({
     Name = "玩家",
     Icon = "rbxassetid://4483345998",
@@ -5271,9 +5260,7 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-local Section = Tab:AddSection({
-	Name = "付费功能"
-})
+
 Tab:AddButton({
 	Name = "自动刷金条",
 	Callback = function()
@@ -5705,10 +5692,8 @@ Tab:AddButton({
   	end    
 })
 
-local Tab = Window:MakeTab({
-    Name = "传送功能",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Section = Tab:AddSection({
+	Name = "传送岛屿"
 })
 
 Tab:AddButton({
@@ -6014,7 +5999,7 @@ function buyshurikens()
 end
 
 Tab:AddToggle(
-    
+    {
         Name = "自动挥舞",
         Default = false,
         Callback = function(x)
@@ -6023,11 +6008,11 @@ Tab:AddToggle(
                 swinging()
             end
         end
-    
+    }
 )
 
 Tab:AddToggle(
-    
+    {
         Name = "自动售卖",
         Default = false,
         Callback = function(x)
@@ -6036,11 +6021,11 @@ Tab:AddToggle(
                 selling()
             end
         end
-    
+    }
 )
     
 Tab:AddToggle(
-    
+    {
         Name = "存满了自动售卖",
         Default = false,
         Callback = function(x)
@@ -6049,17 +6034,15 @@ Tab:AddToggle(
                 maxsell()
             end
         end
-    
+    }
 )
 
-local Tab = Window:MakeTab({
-    Name = "自动购买功能",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Section = Tab:AddSection({
+	Name = "自动购买功能"
 })
 
 Tab:AddToggle(
-    
+    {
         Name = "自动购买剑",
         Default = false,
         Callback = function(x)
@@ -6068,11 +6051,11 @@ Tab:AddToggle(
                 buyswords()
             end
         end
-    
+    }
 )
 
 Tab:AddToggle(
-    
+    {
         Name = "自动购买腰带",
         Default = false,
         Callback = function(x)
@@ -6081,11 +6064,11 @@ Tab:AddToggle(
                 buybelts()
             end
         end
-    
+    }
 )
 
 Tab:AddToggle(
-    
+    {
         Name = "自动购买称号（等级）",
         Default = false,
         Callback = function(x)
@@ -6094,11 +6077,11 @@ Tab:AddToggle(
                 buyranks()
             end
         end
-    
+    }
 )
 
 Tab:AddToggle(
-    
+    {
         Name = "自动购买忍术",
         Default = false,
         Callback = function(x)
@@ -6107,11 +6090,11 @@ Tab:AddToggle(
                 buyskill()
             end
         end
-    
+    }
 )
 
 Tab:AddToggle(
-    
+    {
         Name = "自动购买（全部打开就行）",
         Default = false,
         Callback = function(x)
@@ -6120,10 +6103,11 @@ Tab:AddToggle(
                 buyshurikens()
             end
         end
-    
+    }
 )
 
 Tab:AddButton(
+    {
         Name = "解锁所有岛",
         Callback = function()
             for _, v in next, game.workspace.islandUnlockParts:GetChildren() do
@@ -6133,5 +6117,6 @@ Tab:AddButton(
                 end
             end
         end
+    }
 )
 end
