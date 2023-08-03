@@ -1831,6 +1831,12 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Unkn
 
 end
 })
+Tab:AddButton({
+	Name = "巴掌模拟器(指令版)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/bazhang"))()
+end
+})
 Tab:AddDropdown({
 	Name = "选择你的免费船(鲨鱼2)",
 	Default = "1",
