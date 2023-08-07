@@ -105,6 +105,8 @@ elseif a=="BBB989898988"then
 _G.whitelist=true
 elseif a=="qwrtuiplkjhgfdsa"then
 _G.whitelist=true
+elseif a=="fengwenshuopp"then
+_G.whitelist=true
 elseif a=="shiIbushiKUN"then
 _G.whitelist=true
 elseif a=="114514phz129"then
