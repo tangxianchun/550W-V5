@@ -1,4 +1,4 @@
-local window = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/OrionLib.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/OrionLib.lua"))()
 -----------------------------------------------------------------------------------------------------
 local CardSystemScreenGui = Instance.new("ScreenGui")
 local Window = OrionLib:MakeWindow({Name = "550", HidePremium = false, SaveConfig = true,IntroText = "550W V5", ConfigFolder = "550W V5"})
