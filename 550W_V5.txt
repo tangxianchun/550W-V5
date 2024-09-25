@@ -4,11 +4,11 @@ local CardSystemScreenGui = Instance.new("ScreenGui")
 local Window = OrionLib:MakeWindow({Name = "550", HidePremium = false, SaveConfig = true,IntroText = "550W V5", ConfigFolder = "550W V5"})
 -----------------------------------------------------------------------------------------------------
 local about = Window:MakeTab({
-    Name = "550W V5",
+    Name = "星月交辉 V5",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-about:AddLabel("该脚本为550W第五代")
+about:AddLabel("该脚本为星月交辉第五代")
 about:AddLabel("自动更新")
 about:AddParagraph("作者","tangxianchu")
 about:AddLabel("作者QQ:781759165 更新以及反馈QQ群:781759165")
@@ -17,42 +17,42 @@ about:AddParagraph("这里声称","本来不收费，如果谁骂我，收费5�
 about:AddParagraph("大型","白名单玩家可以享受这大型的中心")
 -----------------------------------------------------------------------------------------------------
 local Tab = Window:MakeTab({
-	Name = "550系列脚本",
+	Name = "星月交辉系列脚本",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "550A TZ",
+	Name = "星月交辉 TZ",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550A-TZ.txt"))()
 	end
 })
 Tab:AddButton({
-	Name = "550W V1",
+	Name = "星月交辉 V1",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV1JM.txt"))();
 	end
 })
 Tab:AddButton({
-	Name = "550W V2",
+	Name = "星月交辉 V2",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550WV2_YUN.txt"))()
 	end
 })
 Tab:AddButton({
-	Name = "550W V3",
+	Name = "星月交辉 X3",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchu/550W_V3/main/550W_V3.txt"))()
 	end
 })
 Tab:AddButton({
-	Name = "550W V4",
+	Name = "星月交辉 V4",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W_/main/550W-V4.txt"))()
 	end
 })
 Tab:AddButton({
-	Name = "550W V5(现在用的)",
+	Name = "星月交辉 V5(现在用的)",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550W-V5/main/550W-V5.txt"))()
 	end
