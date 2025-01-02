@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tangxianchun/550fx/main/OrionLib.lua"))()
 -----------------------------------------------------------------------------------------------------
 local CardSystemScreenGui = Instance.new("ScreenGui")
-local Window = OrionLib:MakeWindow({Name = "550", HidePremium = false, SaveConfig = true,IntroText = "550W V5", ConfigFolder = "550W V5"})
+local Window = OrionLib:MakeWindow({Name = "星月", HidePremium = false, SaveConfig = true,IntroText = "星月 X5", ConfigFolder = "星月 X5"})
 -----------------------------------------------------------------------------------------------------
 local about = Window:MakeTab({
     Name = "星月交辉 V5",
@@ -10,7 +10,7 @@ local about = Window:MakeTab({
 })
 about:AddLabel("该脚本为星月交辉第五代")
 about:AddLabel("自动更新")
-about:AddParagraph("作者","tangxianchu")
+about:AddParagraph("作者","日月")
 about:AddLabel("作者QQ:781759165 更新以及反馈QQ群:781759165")
 about:AddLabel("可以捐款，1~1500元")
 about:AddParagraph("这里声称","本来不收费，如果谁骂我，收费5元")
